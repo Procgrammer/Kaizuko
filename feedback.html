@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<style>
+
+.checked {
+  color: orange;
+}
+.star{
+  padding: 10px;
+}
+
+.feedback{
+	padding: 10px;
+	color: white;
+	border:none;
+ 	border-radius: 4px;
+	background-color: #409eff;
+	box-shadow: 5px 5px 10px 1px rgba(84, 86, 88, 1);
+}
+
+input[type=text], select, textarea{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.form{
+  padding: 20px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.container{
+	margin: 10px;
+	background-color: white;
+	border-radius: 4px;
+}
+.title{
+	border-radius: 4px;
+	background-color: #7c56ff;
+}
+h2{
+	padding: 10px;
+	color: white;
+}
+
+</style>
+<header>
+	<table style="width:100%; text-align:center; border: 1px solid black;">
+		<tr>
+		   <td style="border-right: 1px solid black;">
+			<a href="index.html">PROFILE</a>	
+		   </td>	
+			<td style="border-right: 1px solid black;">
+			<a href="gallery.html">GALLERY</a>
+		   </td>
+			<td style="border-right: 1px solid black;"> 
+			<a href="records.html">RECORDS</a>
+		   </td>
+			<td >
+			<a href="feedback.html">FEEDBACK</a>
+			</td>
+		</tr>
+		</table>
+</header>
+<body style= "background-color: #f4f9ff;">
+<div class="container">
+	<div class="title">
+    	<h2>Website Feedback Form</H2>
+	</div>
+
+	<div class="form">
+    	<form action="mailto:sabinnagiolagon@gmail.com" method="post" enctype="text/plain">
+      		Enter Full Name:<br><input type="text" name="fullname" placeholder="Your name...">
+<br>
+<br>
+      	Your Email Address:<br><input type="text" name="email"  placeholder="Your email...">
+      <br>
+      <br>  
+      <label>Is this the first time you have visited the website?</label><br>
+	<input type="radio" name="feedback" value="1">Yes<br>
+      <input type="radio" name="feddback" value="2">No 
+      <br>
+      <br>
+
+        What is the PRIMARY reason you came to the site? <br>        
+        <textarea rows="6" cols="50" name="commentfield"></textarea>
+<br>
+<br>
+<label>Did you find what you needed?</label><br>  
+	<input type="checkbox" name="feedback" value="1">Yes, all of it<br>
+      <input type="checkbox" name="feedback" value="2">Yes, some of it<br>
+      <input type="checkbox" name="feedback" value="2">No, none of it    
+<br>
+<br>
+<label>User Friendlyness</label><br>
+	<div class="star">
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star"></span>
+	<span class="fa fa-star"></span>
+	</div>
+<br>
+        <button class="feedback" type="submit">Send your feedback</button><br>
+    </form>
+	</div>
+</div>  
+</body>  
+</html>
